@@ -1,3 +1,5 @@
+import LeftBar from "@/components/LeftBar";
+import RightBar from "@/components/RightBar";
 import "./globals.css";
 
 export default function RootLayout({
@@ -7,7 +9,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <div className="">
+          <div className=""><LeftBar /></div>
+          <div className="">{children}</div>
+          <div><RightBar /></div>
+        </div>
+
+      </body>
     </html>
   );
 }
