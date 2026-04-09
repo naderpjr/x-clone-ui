@@ -97,7 +97,18 @@ const LeftBar = () => {
             </div>
 
             {/* username  */}
-            <div className="">User</div>
+            <div className="flex items-center justify-between">
+                <div className="flex items-center gap-2">
+                    <div className="w-10 h-10 relative rounded-full overflow-hidden">
+                        <Image src="/general/avatar.png" alt="avatar" fill />
+                    </div>
+                    <div className="hidden xxl:flex flex-col">
+                        <span className="font-bold">Nader Pjr</span>
+                        <span className="text-sm text-textGray">@naderpjr</span>
+                    </div>
+                </div>
+                <div className="hidden xxl:block cursor-pointer font-bold">...</div>
+            </div>
         </div>
     )
 }
