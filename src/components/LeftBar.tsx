@@ -69,8 +69,8 @@ const LeftBar = () => {
     return (
         <div className="h-screen sticky top-0 flex flex-col justify-between pt-2 pb-8">
             {/* logo menu button  */}
-            <div className="">
-                <Link href="/">
+            <div className="flex flex-col gap-4 text-lg items-center xxl:items-start">
+                <Link href="/" className="p-2 rounded-full hover:bg-[#181818]">
                     <Image src="icons/logo.svg" alt="logo" width={24} height={24} />
                 </Link>
 
@@ -84,6 +84,15 @@ const LeftBar = () => {
                         </Link>
                     ))}
                 </div>
+
+                {/* button  */}
+
+                <Link href="/" className="bg-white text-black rounded-full w-12 h-12 flex items-center justify-center xxl:hidden">
+                    <Image src="icons/post.svg" alt="new post" width={24} height={24} />
+                </Link>
+                <Link href="/" className="hidden xxl:block bg-white text-black rounded-full font-bold py-2 px-20">
+                    Post
+                </Link>
 
             </div>
 
