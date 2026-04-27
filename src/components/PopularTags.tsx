@@ -44,36 +44,6 @@ const PopularTags = () => {
                 <h2 className="text-textGrayLight font-bold">OpenAI</h2>
                 <span className="text-textGray text-sm">20k posts</span>
             </div>
-            {/* Topics  */}
-            <div className="">
-                <div className="flex items-center justify-between">
-                    <span className="text-textGray text-sm">Technology * Trending
-                    </span>
-                    <Image src="icons/infoMore.svg" alt="info" width={16} height={16} />
-                </div>
-                <h2 className="text-textGrayLight font-bold">OpenAI</h2>
-                <span className="text-textGray text-sm">20k posts</span>
-            </div>
-            {/* Topics  */}
-            <div className="">
-                <div className="flex items-center justify-between">
-                    <span className="text-textGray text-sm">Technology * Trending
-                    </span>
-                    <Image src="icons/infoMore.svg" alt="info" width={16} height={16} />
-                </div>
-                <h2 className="text-textGrayLight font-bold">OpenAI</h2>
-                <span className="text-textGray text-sm">20k posts</span>
-            </div>
-            {/* Topics  */}
-            <div className="">
-                <div className="flex items-center justify-between">
-                    <span className="text-textGray text-sm">Technology * Trending
-                    </span>
-                    <Image src="icons/infoMore.svg" alt="info" width={16} height={16} />
-                </div>
-                <h2 className="text-textGrayLight font-bold">OpenAI</h2>
-                <span className="text-textGray text-sm">20k posts</span>
-            </div>
         </div>
     )
 }
