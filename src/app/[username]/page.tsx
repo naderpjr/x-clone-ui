@@ -40,6 +40,24 @@ const UserPage = () => {
                 </div>
 
                 {/* user details  */}
+
+                <div className="p-4 flex flex-col gap-2">
+                    {/* username  */}
+                    <div>
+                        <h1 className="text-2xl font-bold">Nader</h1>
+                        <span className="text-textGray text-sm">@naderpjr</span>
+                    </div>
+                    <p>Full Stack web developer</p>
+                    {/* job and location and date  */}
+                    <div className="flex gap-4 text-textGray text-[15px]">
+                        <Image src="/icons/userLocation.svg" alt="location" width={20} height={20} />
+                        <span>USA</span>
+                    </div>
+                    <div>
+
+                    </div>
+
+                </div>
             </div>
         </div>
     )
