@@ -12,15 +12,35 @@ const UserPage = () => {
                 <h1 className="font-bold text-lg">Nader Pjr</h1>
             </div>
 
-            <Image src="/general/cover.jpg" alt="" width={600} height={600} />
+            {/* info  */}
+            <div>
+                {/* cover and avatar container  */}
+                <div className="relative w-full">
+                    <div className="w-full aspect-[3/1] relative">
+                        <Image src="/general/cover.jpg" alt="" width={600} height={200} />
+                    </div>
 
-            <Image src="/general/cover.jpg" alt="" width={600} height={600} />
+                    {/* avatar  */}
 
-            <Image src="/general/cover.jpg" alt="" width={600} height={600} />
+                    <div className="w-1/5 aspect-square rounded-full overflow-hidden border-4 border-black bg-gray-400 absolute left-4 -translate-y-1/2">
+                        <Image src="/general/avatar.png" alt="" width={150} height={150} />
+                    </div>
+                </div>
+                <div className="flex w-full items-center justify-end gap-2 p-2">
+                    <div className="w-9 h-9 flex items-center justify-center rounded-full border-[1px] border-gray-500 cursor-pointer">
+                        <Image src="/icons/more.svg" alt="more" width={20} height={20} />
+                    </div>
+                    <div className="w-9 h-9 flex items-center justify-center rounded-full border-[1px] border-gray-500 cursor-pointer">
+                        <Image src="/icons/explore.svg" alt="more" width={20} height={20} />
+                    </div>
+                    <div className="w-9 h-9 flex items-center justify-center rounded-full border-[1px] border-gray-500 cursor-pointer">
+                        <Image src="/icons/message.svg" alt="more" width={20} height={20} />
+                    </div>
+                    <button className="py-2 px-4 bg-white text-black font-bold rounded-full">Follow</button>
+                </div>
 
-            <Image src="/general/cover.jpg" alt="" width={600} height={600} />
-
-            <Image src="/general/cover.jpg" alt="" width={600} height={600} />
+                {/* user details  */}
+            </div>
         </div>
     )
 }
