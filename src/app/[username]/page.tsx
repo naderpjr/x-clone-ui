@@ -50,15 +50,36 @@ const UserPage = () => {
                     <p>Full Stack web developer</p>
                     {/* job and location and date  */}
                     <div className="flex gap-4 text-textGray text-[15px]">
-                        <Image src="/icons/userLocation.svg" alt="location" width={20} height={20} />
-                        <span>USA</span>
+                        <div className="flex items-center gap-2">
+                            <Image src="/icons/userLocation.svg" alt="location" width={20} height={20} />
+                            <span>USA</span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                            <Image src="/icons/date.svg" alt="date" width={20} height={20} />
+                            <span>Joined May 2025</span>
+                        </div>
                     </div>
                     <div>
+
+                        {/* followings and followers  */}
+                        <div className="flex gap-4">
+                            <div className="flex items-center gap-2">
+                                <span className="font-bold">100</span>
+                                <span className="text-textGray text-[15px]">Followers</span>
+                            </div>
+                            <div className="flex items-center gap-2">
+                                <span className="font-bold">100</span>
+                                <span className="text-textGray text-[15px]">Followings</span>
+                            </div>
+                        </div>
 
                     </div>
 
                 </div>
             </div>
+
+            {/* feeds  */}
+
         </div>
     )
 }
