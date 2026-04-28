@@ -1,3 +1,4 @@
+import Feed from "@/components/Feed";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -79,7 +80,7 @@ const UserPage = () => {
             </div>
 
             {/* feeds  */}
-
+            <Feed />
         </div>
     )
 }
