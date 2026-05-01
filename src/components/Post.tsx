@@ -2,7 +2,7 @@ import Image from "next/image";
 import PostInfo from "./PostInfo";
 import PostInteraction from "./PostInteraction";
 
-const Post = () => {
+const Post = ({ type }: { type?: "status" | "comments" }) => {
     return (
         <div className="p-4 border-y-[1px] border-borderGray">
             {/* Post type  */}
@@ -15,7 +15,8 @@ const Post = () => {
                 <span>Nader Dev reposted</span>
             </div>
             {/* post Content  */}
-            <div className="flex gap-4">
+            {/* <div className="flex gap-4"> */}
+            <div className={`flex gap-4 ${type === "status" && "flex-col"}`}>
                 {/* Image  */}
                 <div className="relative w-10 h-10 rounded-full overflow-hidden">
                     <Image src="/general/avatar.png" alt="avatar" width={100} height={100} />
